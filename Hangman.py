@@ -4,14 +4,17 @@ updatedWord = ""
 secret = ""
 letter = ""
 def initialize():
-    global updatedWord
-    global SECRET
-    WORDLIST = ['one','two','three','four','five','six','seven','eight','nine','ten']
-    SECRET = random.choice(WORDLIST)
-    updatedWord = [('_'*len(SECRET))]
-   
-    print(updatedWord)
-    print SECRET
+    print "We have a secret word"
+    print "_ _ _ _ _"
+def getLetter():
+    print ("Enter a letter")
+    global letter
+    letter = raw_input()
+def ifWon():
+    if secret == updateWord:
+        print ("you win")
+    else:
+        getLetter()
 
 def getLetter():
     global letter
