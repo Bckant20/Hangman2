@@ -6,15 +6,6 @@ letter = ""
 def initialize():
     print "We have a secret word"
     print "_ _ _ _ _"
-def getLetter():
-    print ("Enter a letter")
-    global letter
-    letter = raw_input()
-def ifWon():
-    if secret == updateWord:
-        print ("you win")
-    else:
-        getLetter()
 
 def getLetter():
     global letter
@@ -26,9 +17,9 @@ def fillLetter():
     updatedWord[pos] = letter
     
 def ifWon():
-    if updatedWord == SECRET:
-        print ('You Won!')
-    else: 
+    if secret == updateWord:
+        print ("you win")
+    else:
         getLetter()
         
 def main():
